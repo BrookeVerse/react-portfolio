@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/Images/logo.svg";
 import navIcon1 from "../../assets/Images/nav-icon1.svg";
 import giticon from "../../assets/Images/gitLinkVector.svg";
+import brookeLogo from "../../assets/Images/Brooke.png";
 
 import "./NavBar.scss";
 
@@ -35,7 +36,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={brookeLogo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -74,7 +75,6 @@ const NavBar = () => {
               </a>
             </div>
             <a href="mailto:brookewaldorf90@gmail.com"> <button className="vvd">
-              {" "}
               <span>Email Me</span>
             </button>
             </a>

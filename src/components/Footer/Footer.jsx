@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import logo from "../../assets/Images/logo.svg";
 import navIcon1 from "../../assets/Images/nav-icon1.svg";
 import gitLogo from "../../assets/Images/gitLinkVector.svg";
+import brookelogo from "../../assets/Images/Brooke.png";
 
 import "./Footer.scss"
 const Footer = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
         <Container>
             <Row className='align-item-center'>
                 <Col sm={6}>
-                    <img src={logo} alt="" className='footer-img'/>
+                    <img src={brookelogo} alt="" className='footer-img'/>
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <div className='social-icon'>
