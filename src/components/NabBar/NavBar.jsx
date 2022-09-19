@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 import logo from "../../assets/Images/logo.svg";
 import navIcon1 from "../../assets/Images/nav-icon1.svg";
+import giticon from "../../assets/Images/gitLinkVector.svg";
 import navIcon2 from "../../assets/Images/nav-icon2.svg";
 
 import "./NavBar.scss";
@@ -66,17 +67,18 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/brooke-waldorf-wells-048269234/" target="_blank">
                 <img src={navIcon1} alt="Linked In" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="Github" />
+              <a href="https://github.com/BrookeVerse" target="_blank">
+                <img src={giticon} alt="Github" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <a href="mailto:brookewaldorf90@gmail.com"> <button className="vvd">
               {" "}
-              <span>Let's Connect</span>
+              <span>Email Me</span>
             </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

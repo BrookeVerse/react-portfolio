@@ -16,8 +16,8 @@ const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
-  const toRotate = ["Junior Developer", "Web Developer", "React Developer"];
-  const period = 2000;
+  const toRotate = ["Junior Developer"];
+  const period = 1000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -59,7 +59,7 @@ const Banner = () => {
               <div className={isVisible ? "animate__animated animate__pulse": ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>
-                  {`Hi there I'm Brooke `}
+                  {`👋Hi there I'm Brooke `}
                   <span className="wrap">{text}</span>
                 </h1>
                 <p>
@@ -67,9 +67,11 @@ const Banner = () => {
                   become a reality. I have been trained on HTML, CSS, JavaScript and React. Working through project to keep learning and growing to
                   become a valuable asset to any team.
                 </p>
-                <button onClick={() => console.log("connect")}>
+                <a href="#connect">
+                <button>
                   Let's Connect <ArrowRightCircle size={25} />{" "}
                 </button>
+                </a>
               </div>}
             </TrackVisibility>
           </Col>
