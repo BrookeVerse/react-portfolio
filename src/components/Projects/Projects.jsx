@@ -1,6 +1,8 @@
 import React from "react";
 
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 import ProjectCards from "../ProjectCards/ProjectCards";
 import colorSharp2 from "../../assets/Images/color-sharp2.png";
@@ -47,9 +49,15 @@ const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col>
-            <h2>Projects</h2>
-            <p>These are the projects I have been working on.</p>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
+                  <h2>Projects</h2>
+                  <p>These are the projects I have been working on.</p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
