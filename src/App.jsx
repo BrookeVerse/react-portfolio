@@ -6,6 +6,7 @@ import Skills from './components/Skills/Skills';
 import Projects from './components/Projects/Projects';
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import ContactForm from './components/ContactForm/ContactForm';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <ContactForm />
     </div>
   );
 }
