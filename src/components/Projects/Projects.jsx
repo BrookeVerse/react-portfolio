@@ -15,8 +15,8 @@ import "./Projects.scss";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "A Simple Web Page",
+      description: "My First ever project, creating a simple web page using HTML, CSS and a little JavaScript.",
       imgUrl: projImg1,
     },
     {
@@ -54,20 +54,20 @@ const Projects = () => {
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                   <h2>Projects</h2>
-                  <p>These are the projects I have been working on.</p>
+                  <p>When I started this journey I didn't know how to code anything. As you go through my project you will see my skills advance and become professional and more advanced.</p>
                 </div>
               )}
             </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
+                  <Nav.Link eventKey="first">HTML/CSS</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                  <Nav.Link eventKey="second">React</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                  <Nav.Link eventKey="third">Java</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -78,8 +78,18 @@ const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Content</Tab.Pane>
-                <Tab.Pane eventKey="second">Content</Tab.Pane>
+                <Tab.Pane eventKey="second">
+                  <Row>
+                    {projects.map((project, index) => {
+                      return <ProjectCards key={index} {...project} />;
+                    })}
+                  </Row>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <Row>
+                    Coming Soon...
+                  </Row>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>

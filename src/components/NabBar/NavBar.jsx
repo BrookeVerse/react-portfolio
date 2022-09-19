@@ -8,7 +8,6 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/Images/logo.svg";
 import navIcon1 from "../../assets/Images/nav-icon1.svg";
 import giticon from "../../assets/Images/gitLinkVector.svg";
-import navIcon2 from "../../assets/Images/nav-icon2.svg";
 
 import "./NavBar.scss";
 
